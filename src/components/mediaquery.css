@@ -117,7 +117,7 @@
     padding-top: 2%;
     }
     .btn-container{
-      width: 83% !important;
+      width: 41% !important;
     }
 }
 @media (max-width: 385px) {
@@ -128,7 +128,7 @@
   width: 35rem !important;
 }
 .btn-container{
-  width: 94% !important;
+  width: 47% !important;
 }
 }
 @media (max-width: 320px) {
