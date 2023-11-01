@@ -1,0 +1,95 @@
+/* start item */
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    color: var(--font);
+}
+.item .left{
+    width: 100%;
+    height: 100%;
+}
+.item .left img{
+    width: 50rem;
+    height: 50rem;
+}
+.item .right{
+    margin-left: 10%;
+}
+.item .right>* {
+    margin: 1rem;
+}
+/* .item .right h3{
+    color: var(--hover);
+} */
+.item .right span{
+    color: rgb(128,142,156);
+    cursor: pointer;
+}
+.item .right .paragraph{
+    padding: 2rem 0rem 2rem 0rem;
+    border-top: 1px dotted rgba(128, 142, 156, 0.418);
+    border-bottom: 1px dotted rgba(128, 142, 156, 0.418);
+    line-height: 3rem;
+}
+.item .right .range{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+.item .right .range input{
+    width: 6rem;
+    margin-right: 1rem;
+    border: 1px solid rgba(128, 142, 156, 0.418);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.item .right .range .arrow{
+    margin-right: 5rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+.item .right .icon{
+    display: inline-block;
+    background-color:var(--icon);
+    color: var(--font);
+    padding: 2% 3% 2% 3%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    cursor: pointer;
+}
+.item .right .icon:hover{
+    background-color: var(--title);
+    box-shadow: 0 1rem 2rem rgba(56, 74, 235, 0.271);
+}
+
+/* end item */
+.btn{
+    background-color: var(--hover);
+    border: 1px solid rgb(56,74,235);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 1rem 2rem 1rem 2rem;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--hover);
+}

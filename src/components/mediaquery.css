@@ -1,0 +1,151 @@
+/* media query */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width: 1024px) {
+  .mybtn{
+    left: 20.5rem;
+    margin-top: -32px;
+  }
+  header .navbar{
+    width: 61rem;
+  }
+  .buy{
+    left:50px !important;
+    bottom: 5% !important;
+}
+.btn-container{
+  width: 28% !important;
+}
+  
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 768px) {
+    #menu-bar {
+        position: absolute;
+        right: 2rem;
+        display: initial;
+    }
+    header {
+        width: 100%;
+        padding: 15px 5px 10px 5px ;
+        justify-content: left;
+      }
+    header #icon{
+    margin-left: 1rem;
+    padding-top: 1%;
+    }
+    header .navbar {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /* background: rgba(0,0,0,.5); */
+    backdrop-filter: blur(5px);
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    width: 100%;
+    height: 100vh;
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a {
+        font-size: 16px;
+        border-radius: 8px;
+        margin: 10px; 
+        margin-left: 8px;
+        justify-content: left;
+        padding: 0.5% 3% 0.5% 3%;
+        width: max-content;
+      }
+      .home {
+        width: 95%;
+      }
+      .mybtn{
+        left: 20rem;
+        margin-top: 5px;
+      }
+      footer .fcontainer{
+        width: 90%;
+        font-size: 10px;
+      }
+      .buy{
+        left:72px !important;
+     }
+
+     .item{
+      flex-wrap: wrap;
+      width: 100%;
+      }
+    .item .left img{
+      width: 40rem !important;
+  }
+    .item .right{
+        margin-left: 0% !important;
+    }
+    .btn-container{
+      width: 35% !important;
+    }
+
+}
+@media (max-width: 450px) {
+    .home {
+      flex-direction: column;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .mybtn{
+      left: 20rem;
+      margin-top: -30px;
+    }
+    .buy{
+      left:106px !important;
+   }
+   .btn{
+    width: 20rem;
+  }
+  header #icon{
+    padding-top: 2%;
+    }
+    .btn-container{
+      width: 83% !important;
+    }
+}
+@media (max-width: 385px) {
+  .buy{
+    left:90px !important;
+ }
+ .item .left img{
+  width: 35rem !important;
+}
+.btn-container{
+  width: 94% !important;
+}
+}
+@media (max-width: 320px) {
+  .box{
+    margin-right: 0.5rem;
+  }
+  .mybtn{
+    left: 20rem;
+    margin-top: -29px;
+  }
+  .buy{
+    left:72px !important;
+ }
+ .item .left img{
+  width: 30rem !important;
+}
+.btn-container{
+  width: 55% !important;
+}
+}
