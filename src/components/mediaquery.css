@@ -16,10 +16,6 @@
     left:50px !important;
     bottom: 5% !important;
 }
-.btn-container{
-  width: 28% !important;
-}
-  
 }
 
 @media (max-width: 991px) {
@@ -92,9 +88,6 @@
     .item .right{
         margin-left: 0% !important;
     }
-    .btn-container{
-      width: 35% !important;
-    }
 
 }
 @media (max-width: 450px) {
@@ -117,7 +110,7 @@
     padding-top: 2%;
     }
     .btn-container{
-      width: 41% !important;
+      flex-wrap: wrap !important;
     }
 }
 @media (max-width: 385px) {
@@ -126,9 +119,6 @@
  }
  .item .left img{
   width: 35rem !important;
-}
-.btn-container{
-  width: 47% !important;
 }
 }
 @media (max-width: 320px) {
@@ -144,8 +134,5 @@
  }
  .item .left img{
   width: 30rem !important;
-}
-.btn-container{
-  width: 55% !important;
 }
 }
