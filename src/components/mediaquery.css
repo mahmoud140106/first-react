@@ -80,7 +80,7 @@
 
      .item{
       flex-wrap: wrap;
-      width: 100%;
+      width: 78% !important;
       }
     .item .left img{
       width: 40rem !important;
