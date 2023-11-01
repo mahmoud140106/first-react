@@ -30,7 +30,7 @@
         display: initial;
     }
     header {
-        width: 100%;
+        width: 80%;
         padding: 15px 5px 10px 5px ;
         justify-content: left;
       }
@@ -64,11 +64,11 @@
         width: max-content;
       }
       .home {
-        width: 95%;
+        width: 80%;
       }
       .mybtn{
         left: 20rem;
-        margin-top: 5px;
+        margin-top: -30.5px;
       }
       footer .fcontainer{
         width: 90%;
@@ -126,13 +126,24 @@
     margin-right: 0.5rem;
   }
   .mybtn{
-    left: 20rem;
-    margin-top: -29px;
+    left: 20.3rem;
+    margin-top: -27px;
+    padding: 0.3rem 1rem 0.3rem 1rem;
   }
   .buy{
     left:72px !important;
  }
  .item .left img{
   width: 30rem !important;
+}
+.box h4{
+  font-size: 15px;
+}
+.box p{
+  font-size: 10px;
+}
+.home .right{
+  width: 32rem;
+  height: 50rem;
 }
 }
