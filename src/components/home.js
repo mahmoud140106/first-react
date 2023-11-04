@@ -2,6 +2,7 @@
 import CountUp from 'react-countup';
 import Slides from './slides';
 import Counterfetch from './counterfetch';
+import Icons from './icons';
 
 function Home() {
 
@@ -16,8 +17,8 @@ function Home() {
                       <p>find a variety of properties that suit you very easily forget all difficulties in finding aresidience for you</p>
                       </div>
                         <div className="search">
-                          <i className="fa-solid fa-location-arrow"></i>
-                          <input type="search"></input>
+                          <label htmlFor='search'><i className="fa-solid fa-location-arrow"></i></label>
+                          <input type="search" id='search' placeholder='search here...'></input>
                           <button className="mybtn">search</button>
                         </div> 
                         <div className="nums">
@@ -41,6 +42,7 @@ function Home() {
                 </div>
             </div>
         </section>
+        <Icons/>
         <Slides/>
         <Counterfetch/>
     </>

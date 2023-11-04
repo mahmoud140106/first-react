@@ -2,7 +2,7 @@ import{React,useEffect,useState} from 'react'
 import axios from 'axios';
 import'./product.css'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
 import { Autoplay,Navigation, Pagination} from 'swiper/modules';
 import'swiper/css';
 import 'swiper/css/navigation';
@@ -21,16 +21,29 @@ function Slides() {
       console.log(error)
     })
   })
+  // const swiper=useSwiper()
+  const SwiperButtonNext = () => {
+    const swiper = useSwiper();
+    // return <button className='slide' title='slide' onClick={() => swiper.slideNext()}><i className="fa-solid fa-chevron-right"></i></button>;
+    return <div className='slide' title='slide' onClick={() => swiper.slideNext()}><i className="fa-solid fa-chevron-right"></i></div>;
+
+  };
+  const SwiperButtonPrev = () => {
+    const swiper = useSwiper();
+    // return <button className='slide' title='slide' onClick={() => swiper.slidePrev()}><i className="fa-solid fa-chevron-left"></i></button>;
+    return <div className='slide' title='slide' onClick={() => swiper.slidePrev()}><i className="fa-solid fa-chevron-left"></i></div>;
+  };
 
   return (
            <>
+          
           <Swiper 
           modules={[Autoplay,Navigation, Pagination]}  
-          spaceBetween={75} 
+          spaceBetween={40} 
           // slidesPerView={4} 
           breakpoints = {{
             1024: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 // spaceBetweenSlides: 75
             },
             768: {
@@ -43,11 +56,13 @@ function Slides() {
             }
           }}
 
-          navigation pagination={{ clickable: true }} 
+          // navigation 
+          // pagination={{ clickable: true }} 
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)} 
-          autoplay={{delay: 4000, disableOnInteraction: false, }
-        }>
+          autoplay={{delay: 5000, disableOnInteraction: false, }}
+          
+          >
             {products.map((product)=>(
                     <SwiperSlide key={product.id}>
                         <img src={product.image} alt=""/>
@@ -56,9 +71,13 @@ function Slides() {
                         <p>price: {product.price}</p>
                         <p>{product.category}</p>
                         </div>
-                        <Link className='buy' to={`/singleproduct/${product.id}`}>buy now</Link>
+                        <Link className='buy' to={`/singleproduct/${product.id}`}><button>buy now</button></Link>
                     </SwiperSlide>
-                ))}      
+                ))} 
+          <div className='slide-container'>
+          <SwiperButtonPrev/>  
+          <SwiperButtonNext/>
+          </div>  
           </Swiper>
           </>
   );

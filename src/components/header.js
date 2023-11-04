@@ -36,7 +36,7 @@ function Header() {
     <>
         <header>
             <div>
-            <a href="index.html" className="logo"><img src="./img/logo.jpg" alt="" /></a>
+            <a href="index.html" className="logo" title="logo"><img src="./img/logo.jpg" alt="" /> </a>
             </div>
             <div id="icon" onClick={mode}>
             {show?<i className="fa-solid fa-sun"></i> : <i className="fa-solid fa-moon"></i>}

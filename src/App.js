@@ -2,7 +2,6 @@ import './App.css';
 import './components/mediaquery.css';
 import Header from './components/header';
 import Home from './components/home';
-import Footer from './components/footer';
 import Single from './components/singleproduct';
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
@@ -18,7 +17,6 @@ function App() {
         <Route path='/singleproduct/:id' element={<Single/>}></Route>
         <Route path='*' element={<h1 className='notfound'>page not found</h1>}></Route>
       </Routes>
-      <Footer/>
       </BrowserRouter>
     </div>
   );

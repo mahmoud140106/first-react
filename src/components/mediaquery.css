@@ -1,149 +1,133 @@
 /* media query */
 @media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
+  html {
+    font-size: 55%;
+  }
 }
 @media (max-width: 1024px) {
-  .mybtn{
-    left: 20.5rem;
-    margin-top: -32px;
-  }
   header .navbar{
     width: 61rem;
   }
-  .buy{
-    left:50px !important;
-    bottom: 5% !important;
-}
+  .home .left .content .search input{
+    width: 16rem;
+  }
 }
 
 @media (max-width: 991px) {
-    html {
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
+  }
 }
 @media (max-width: 768px) {
-    #menu-bar {
-        position: absolute;
-        right: 2rem;
-        display: initial;
-    }
-    header {
-        width: 80%;
-        padding: 15px 5px 10px 5px ;
-        justify-content: left;
-      }
-    header #icon{
+  #menu-bar {
+    position: absolute;
+    right: 2rem;
+    display: initial;
+  }
+  header {
+    width: 80%;
+    padding: 15px 5px 10px 5px ;
+    justify-content: left;
+  }
+  header #icon{
     margin-left: 1rem;
     padding-top: 1%;
-    }
-    header .navbar {
+  }
+  header .navbar {
     position: absolute;
     flex-direction: column;
     top: 100%;
     left: 0;
     right: 0;
-    /* background: rgba(0,0,0,.5); */
     backdrop-filter: blur(5px);
     border-top: .1rem solid rgba(255, 255, 255, .2);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     width: 100%;
     height: 100vh;
-    }
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    header .navbar a {
-        font-size: 16px;
-        border-radius: 8px;
-        margin: 10px; 
-        margin-left: 8px;
-        justify-content: left;
-        padding: 0.5% 3% 0.5% 3%;
-        width: max-content;
-      }
-      .home {
-        width: 80%;
-      }
-      .mybtn{
-        left: 20rem;
-        margin-top: -30.5px;
-      }
-      footer .fcontainer{
-        width: 90%;
-        font-size: 10px;
-      }
-      .buy{
-        left:72px !important;
-     }
-
-     .item{
-      flex-wrap: wrap;
-      width: 78% !important;
-      }
-    .item .left img{
-      width: 40rem !important;
   }
-    .item .right{
-        margin-left: 0% !important;
-    }
-
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 10px; 
+    margin-left: 8px;
+    justify-content: left;
+    padding: 0.5% 3% 0.5% 3%;
+    width: max-content;
+  }
+  .home {
+    width: 80%;
+  }
+  footer .fcontainer{
+    width: 90%;
+    font-size: 10px;
+  }
+  .item{
+    flex-wrap: wrap;
+    width: 78% !important;
+  }
+  .item .left img{
+    width: 40rem !important;
+  }
+  .item .right{
+    margin-left: 0% !important;
+  }
+  .home .left .content .search input{
+    width: 15rem;
+  }
 }
 @media (max-width: 450px) {
-    .home {
-      flex-direction: column;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .mybtn{
-      left: 20rem;
-      margin-top: -30px;
-    }
-    .buy{
-      left:106px !important;
-   }
-   .btn{
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .btn{
     width: 20rem;
   }
   header #icon{
     padding-top: 2%;
-    }
-    .btn-container{
-      flex-wrap: wrap !important;
-    }
+  }
+  .btn-container{
+    flex-wrap: wrap !important;
+  }
+  .home .left .content .search input{
+    width: 11rem;
+  }
+  .swiper-slide{
+    margin-top: 22% !important;
+  }
+  footer .icons-container{
+    flex-wrap: wrap;
+    text-align: left;
+  }
 }
-@media (max-width: 385px) {
-  .buy{
-    left:90px !important;
- }
- .item .left img{
-  width: 35rem !important;
-}
+@media (max-width: 375px) {
+  .item .left img{
+    width: 35rem !important;
+  }
 }
 @media (max-width: 320px) {
   .box{
     margin-right: 0.5rem;
   }
-  .mybtn{
-    left: 20.3rem;
-    margin-top: -27px;
-    padding: 0.3rem 1rem 0.3rem 1rem;
+  .item .left img{
+    width: 30rem !important;
   }
-  .buy{
-    left:72px !important;
- }
- .item .left img{
-  width: 30rem !important;
-}
-.box h4{
-  font-size: 15px;
-}
-.box p{
-  font-size: 10px;
-}
-.home .right{
-  width: 32rem;
-  height: 50rem;
-}
+  .box h4{
+    font-size: 15px;
+  }
+  .box p{
+    font-size: 10px;
+  }
+  .home .right{
+    width: 32rem;
+    height: 50rem;
+  }
+  .home .left .content .search input{
+    width: 6rem;
+  }
+
 }

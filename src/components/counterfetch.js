@@ -1,5 +1,7 @@
 import {React ,useEffect,useState } from 'react'
 import axios from 'axios';
+import {Link} from 'react-router-dom';
+
 function Counterfetch() {
 const[products,setProduct]=useState([]);
 const[count,setCount]=useState(1);
@@ -13,22 +15,30 @@ axios.get('https://fakestoreapi.com/products')
 })
 })
 const firstProduct = products.slice(0, count);
-
+const handleincrement=()=>{
+  if(count<20){
+    setCount(count+1)
+  }
+}
+const handldecrement=()=>{
+  if(count>1){
+    setCount(count-1)
+  }
+}
   return (
            <>
             <div className='btn-container'>
-            <button className='btn' onClick={()=>setCount(count+1)}>plus product</button>
-            <button className='btn' onClick={()=>setCount(count-1)}>minus product</button>
+            <button className='btn' onClick={handleincrement}>plus product</button>
+            <button className='btn' onClick={handldecrement}>minus product</button>
             </div>
-            <div className='mycard-container'>
+            <div className="counter-container">
             {firstProduct.map((product)=>(
-                <div key={product.id} className='mycard'>
+                <div key={product.id} className='counter'>
                     <img src={product.image} alt=""/>
-                    <h1>{product.title}</h1>
-                    <div className='content'>
-                    <p>price: {product.price}</p>
+                    <h3>{product.title}</h3>
+                    <p>price: ${product.price}</p>
                     <p>{product.category}</p>
-                    </div>
+                    <Link to={`/singleproduct/${product.id}`}><button>buy now</button></Link>
                 </div>
             ))}      
             </div>
